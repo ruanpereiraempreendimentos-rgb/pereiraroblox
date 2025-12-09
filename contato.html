@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - RobloxEmpire</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Roblox<span class="logo-highlight">Empire</span></span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="sobre.html" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="produtos.html" class="nav-link"><i class="fas fa-shopping-bag"></i> Produtos</a></li>
+                    <li><a href="serviços.html" class="nav-link"><i class="fas fa-tools"></i> Serviços</a></li>
+                    <li><a href="blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="contato.html" class="nav-link active"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="carrinho.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-title">Entre em <span class="highlight">Contato</span></h1>
+            <p class="page-subtitle">Estamos aqui para ajudar com suas dúvidas e pedidos</p>
+        </div>
+    </section>
+
+    <!-- Informações de Contato -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-detail">ruanpereira.empreendimentos@gmail.com</p>
+                    <p class="contact-note">Respondemos em até 24 horas</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="contact-title">Instagram</h3>
+                    <p class="contact-detail">@robloxempire_oficial</p>
+                    <a href="#" class="btn btn-outline">Seguir</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="contact-title">Horários</h3>
+                    <p class="contact-detail">Seg-Sex: 9:00 - 22:00</p>
+                    <p class="contact-detail">Sábado: 10:00 - 20:00</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="contact-title">Suporte</h3>
+                    <p class="contact-detail">Atendimento prioritário</p>
+                    <p class="contact-note">Para clientes premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title">Envie sua <span class="highlight">Mensagem</span></h2>
+                <p class="section-subtitle">Preencha o formulário abaixo e entraremos em contato o mais breve possível</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Assunto *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida sobre produto</option>
+                            <option value="suporte">Suporte técnico</option>
+                            <option value="venda">Compra/Venda</option>
+                            <option value="parceria">Proposta de parceria</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </div>
+                </form>
+                
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">RobloxEmpire</h3>
+                    <p class="footer-text">Sua loja completa para tudo do Roblox. Produtos e serviços de qualidade para elevar sua experiência de jogo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="serviços.html">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Suporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Reembolso</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> ruanpereira.empreendimentos@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 RobloxEmpire. Todos os direitos reservados. Este site não é afiliado com Roblox Corporation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>
